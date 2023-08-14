@@ -2,15 +2,7 @@
 if not "%1"=="am_admin" (
     powershell -Command "Start-Process -Verb RunAs -FilePath '%0' -ArgumentList 'am_admin'"
     exit /b)
-winget install Mozilla.Firefox
-winget install spotify.spotify
-winget install discord.discord
-winget install Valve.Steam
-winget install GOG.Galaxy
-winget install jetbrains.pycharm.professional
-winget install git.git
-winget install Chocolatey.Chocolatey
-winget install Oracle.VirtualBox
+winget install Mozilla.Firefox spotify.spotify discord.discord Valve.Steam GOG.Galaxy jetbrains.pycharm.professional git.git Chocolatey.Chocolatey Oracle.VirtualBox
 echo Anihilating Edge
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /d "0x0001" /f >nul 2>&1
 taskkill /f /im Widgets.exe
