@@ -2,7 +2,18 @@
 if not "%1"=="am_admin" (
     powershell -Command "Start-Process -Verb RunAs -FilePath '%0' -ArgumentList 'am_admin'"
     exit /b)
-winget install Mozilla.Firefox spotify.spotify discord.discord JetBrains.Toolbox jetbrains.pycharm.professional Google.AndroidStudio JetBrains.Rider JetBrains.WebStorm git.git Chocolatey.Chocolatey Oracle.VirtualBox JetBrains.IntelliJIDEA.Ultimate
+winget install Mozilla.Firefox 
+winget install spotify.spotify 
+winget install discord.discord 
+winget install JetBrains.Toolbox 
+winget install jetbrains.pycharm.professional 
+winget install Google.AndroidStudio 
+winget install JetBrains.Rider 
+winget install JetBrains.WebStorm 
+winget install git.git 
+winget install Chocolatey.Chocolatey 
+winget install Oracle.VirtualBox 
+winget install JetBrains.IntelliJIDEA.Ultimate
 
 echo Anihilating Edge
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /d "0x0001" /f >nul 2>&1
