@@ -14,7 +14,7 @@ winget install git.git
 winget install Chocolatey.Chocolatey 
 winget install Oracle.VirtualBox 
 winget install JetBrains.IntelliJIDEA.Ultimate
-
+winget install Python.Python.3.11
 echo Anihilating Edge
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate" /v "DoNotUpdateToEdgeWithChromium" /d "0x0001" /f >nul 2>&1
 taskkill /f /im Widgets.exe
