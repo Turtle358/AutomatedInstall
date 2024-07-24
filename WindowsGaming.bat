@@ -7,10 +7,7 @@ winget install spotify.spotify
 winget install discord.discord 
 winget install Valve.Steam 
 winget install GOG.Galaxy 
-winget install jetbrains.pycharm.professional 
 winget install git.git 
-winget install Chocolatey.Chocolatey 
-winget install Oracle.VirtualBox
 winget install Python.Python.3.11
 winget install REALiX.HWiNFO
 echo Anihilating Edge
